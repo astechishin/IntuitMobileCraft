@@ -83,6 +83,7 @@
 		01C1E50923F7AFDA0049E7B6 /* IntuitMobileCraft */ = {
 			isa = PBXGroup;
 			children = (
+				01C1E53123F7B60B0049E7B6 /* view_models */,
 				01C1E50A23F7AFDA0049E7B6 /* AppDelegate.swift */,
 				01C1E50F23F7AFDA0049E7B6 /* SceneDelegate.swift */,
 				01C1E51123F7AFDA0049E7B6 /* Event.swift */,
@@ -111,6 +112,13 @@
 				01C1E52823F7AFE80049E7B6 /* Info.plist */,
 			);
 			path = IntuitMobileCraftTests;
+			sourceTree = "<group>";
+		};
+		01C1E53123F7B60B0049E7B6 /* view_models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view_models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
