@@ -1,4 +1,4 @@
-#Intuit Mobile Craft project
+# Intuit Mobile Craft project
 
 Github Issues display by repository for the Intuit organization
 
