@@ -16,66 +16,35 @@ private let dateFormatter: DateFormatter = {
 }()
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext)
-    var viewContext   
+    @EnvironmentObject var dataMgr: DataManager
  
     var body: some View {
         NavigationView {
-            MasterView()
-                .navigationBarTitle(Text("Master"))
+            RespositoryListView()
+                .navigationBarTitle(Text(dataMgr.organization))
                 .navigationBarItems(
-                    leading: EditButton(),
                     trailing: Button(
                         action: {
-                            withAnimation { Event.create(in: self.viewContext) }
+                            withAnimation { self.initiateRefresh() }
                         }
-                    ) { 
-                        Image(systemName: "plus")
+                    ) {
+                        Image(systemName: "arrow.clockwise")
                     }
                 )
-            Text("Detail view content goes here")
-                .navigationBarTitle(Text("Detail"))
+            Text("Select a repository to view the issues")
+                .navigationBarTitle(Text("Issue List"))
         }.navigationViewStyle(DoubleColumnNavigationViewStyle())
     }
-}
-
-struct MasterView: View {
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Event.timestamp, ascending: true)], 
-        animation: .default)
-    var events: FetchedResults<Event>
-
-    @Environment(\.managedObjectContext)
-    var viewContext
-
-    var body: some View {
-        List {
-            ForEach(events, id: \.self) { event in
-                NavigationLink(
-                    destination: DetailView(event: event)
-                ) {
-                    Text("\(event.timestamp!, formatter: dateFormatter)")
-                }
-            }.onDelete { indices in
-                self.events.delete(at: indices, from: self.viewContext)
-            }
-        }
+    
+    func initiateRefresh() {
+        print("refresh initiated...go do it!")
     }
 }
-
-struct DetailView: View {
-    @ObservedObject var event: Event
-
-    var body: some View {
-        Text("\(event.timestamp!, formatter: dateFormatter)")
-            .navigationBarTitle(Text("Detail"))
-    }
-}
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        return ContentView().environment(\.managedObjectContext, context)
+        let dm = DataManager(for: "test", usingProvider: ExampleDataProvider())
+        
+        return ContentView().environmentObject(dm)
     }
 }

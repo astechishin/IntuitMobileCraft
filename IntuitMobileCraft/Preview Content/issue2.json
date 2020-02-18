@@ -1,0 +1,54 @@
+{
+  "url": "https://api.github.com/repos/intuit/simple_deploy/issues/246",
+  "repository_url": "https://api.github.com/repos/intuit/simple_deploy",
+  "labels_url": "https://api.github.com/repos/intuit/simple_deploy/issues/246/labels{/name}",
+  "comments_url": "https://api.github.com/repos/intuit/simple_deploy/issues/246/comments",
+  "events_url": "https://api.github.com/repos/intuit/simple_deploy/issues/246/events",
+  "html_url": "https://github.com/intuit/simple_deploy/pull/246",
+  "id": 475417155,
+  "node_id": "MDExOlB1bGxSZXF1ZXN0MzAzMTc1Mzg5",
+  "number": 246,
+  "title": "docs: fix typo",
+  "user": {
+    "login": "Jason-Cooke",
+    "id": 5185660,
+    "node_id": "MDQ6VXNlcjUxODU2NjA=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/5185660?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Jason-Cooke",
+    "html_url": "https://github.com/Jason-Cooke",
+    "followers_url": "https://api.github.com/users/Jason-Cooke/followers",
+    "following_url": "https://api.github.com/users/Jason-Cooke/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Jason-Cooke/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Jason-Cooke/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Jason-Cooke/subscriptions",
+    "organizations_url": "https://api.github.com/users/Jason-Cooke/orgs",
+    "repos_url": "https://api.github.com/users/Jason-Cooke/repos",
+    "events_url": "https://api.github.com/users/Jason-Cooke/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Jason-Cooke/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2019-08-01T00:43:40Z",
+  "updated_at": "2019-08-01T00:43:40Z",
+  "closed_at": null,
+  "author_association": "NONE",
+  "pull_request": {
+    "url": "https://api.github.com/repos/intuit/simple_deploy/pulls/246",
+    "html_url": "https://github.com/intuit/simple_deploy/pull/246",
+    "diff_url": "https://github.com/intuit/simple_deploy/pull/246.diff",
+    "patch_url": "https://github.com/intuit/simple_deploy/pull/246.patch"
+  },
+  "body": ""
+}

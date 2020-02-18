@@ -1,0 +1,56 @@
+{
+  "url": "https://api.github.com/repos/intuit/heirloom/issues/111",
+  "repository_url": "https://api.github.com/repos/intuit/heirloom",
+  "labels_url": "https://api.github.com/repos/intuit/heirloom/issues/111/labels{/name}",
+  "comments_url": "https://api.github.com/repos/intuit/heirloom/issues/111/comments",
+  "events_url": "https://api.github.com/repos/intuit/heirloom/issues/111/events",
+  "html_url": "https://github.com/intuit/heirloom/issues/111",
+  "id": 9822166,
+  "node_id": "MDU6SXNzdWU5ODIyMTY2",
+  "number": 111,
+  "title": "Add authorize option on upload ( same functionality / flags as authorize subcommand )",
+  "user": {
+    "login": "weavenet",
+    "id": 581639,
+    "node_id": "MDQ6VXNlcjU4MTYzOQ==",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/581639?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/weavenet",
+    "html_url": "https://github.com/weavenet",
+    "followers_url": "https://api.github.com/users/weavenet/followers",
+    "following_url": "https://api.github.com/users/weavenet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/weavenet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/weavenet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/weavenet/subscriptions",
+    "organizations_url": "https://api.github.com/users/weavenet/orgs",
+    "repos_url": "https://api.github.com/users/weavenet/repos",
+    "events_url": "https://api.github.com/users/weavenet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/weavenet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "id": 6439781,
+      "node_id": "MDU6TGFiZWw2NDM5Nzgx",
+      "url": "https://api.github.com/repos/intuit/heirloom/labels/enhancement",
+      "name": "enhancement",
+      "color": "84b6eb",
+      "default": true,
+      "description": null
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-01-09T21:39:25Z",
+  "updated_at": "2013-01-09T21:39:25Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "body": ""
+}

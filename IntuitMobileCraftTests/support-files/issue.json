@@ -1,0 +1,49 @@
+{
+  "url": "https://api.github.com/repos/intuit/heirloom/issues/169",
+  "repository_url": "https://api.github.com/repos/intuit/heirloom",
+  "labels_url": "https://api.github.com/repos/intuit/heirloom/issues/169/labels{/name}",
+  "comments_url": "https://api.github.com/repos/intuit/heirloom/issues/169/comments",
+  "events_url": "https://api.github.com/repos/intuit/heirloom/issues/169/events",
+  "html_url": "https://github.com/intuit/heirloom/issues/169",
+  "id": 31575904,
+  "node_id": "MDU6SXNzdWUzMTU3NTkwNA==",
+  "number": 169,
+  "title": "Heirloom allows data to be written to more than one metadata region",
+  "user": {
+    "login": "capen",
+    "id": 115114,
+    "node_id": "MDQ6VXNlcjExNTExNA==",
+    "avatar_url": "https://avatars3.githubusercontent.com/u/115114?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/capen",
+    "html_url": "https://github.com/capen",
+    "followers_url": "https://api.github.com/users/capen/followers",
+    "following_url": "https://api.github.com/users/capen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/capen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/capen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/capen/subscriptions",
+    "organizations_url": "https://api.github.com/users/capen/orgs",
+    "repos_url": "https://api.github.com/users/capen/repos",
+    "events_url": "https://api.github.com/users/capen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/capen/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "assignees": [
+
+  ],
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-04-15T17:59:08Z",
+  "updated_at": "2014-04-15T17:59:08Z",
+  "closed_at": null,
+  "author_association": "CONTRIBUTOR",
+  "body": "In a team collaboration setting, if the team is not in sync and different members have a different metadata_region in their .heirloom.yml file, then data related to heirloom can be fragmented and out of sync.  Although not trivial, it might make sense to have a locking mechanism that allows there to be only one master metadata region at a time.\n"
+}
+

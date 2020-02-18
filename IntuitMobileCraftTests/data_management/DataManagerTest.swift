@@ -1,15 +1,15 @@
 //
-//  IntuitMobileCraftTests.swift
+//  DataManagerTest.swift
 //  IntuitMobileCraftTests
 //
-//  Created by Andy Stechishin on 2020-02-14.
+//  Created by Andy Stechishin on 2020-02-18.
 //  Copyright © 2020 Andy Stechishin. All rights reserved.
 //
 
 import XCTest
 @testable import IntuitMobileCraft
 
-class IntuitMobileCraftTests: XCTestCase {
+class DataManagerTest: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -19,9 +19,15 @@ class IntuitMobileCraftTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testInitialization() throws {
+        let dm = DataManager(for: "test", usingProvider: ExampleDataProvider())
+        XCTAssert(dm.respositories.count == 3, "Expected 3 repositories to be loaded got: \(dm.respositories.count)")
+    }
+    
+    func testInitializationWithAPI() throws {
+        try XCTSkipIf(true, "Need to set up expectation for completion within DataManager")
+        let dm = DataManager(for: "intuit", usingProvider: APIDataProvider())
+        XCTAssert(dm.respositories.count > 0, "Expected more than 0 repositories to be loaded")
     }
 
     func testPerformanceExample() throws {
